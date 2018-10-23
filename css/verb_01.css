@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  background-color:#b8deeb;
 }
 
 html {
@@ -29,11 +30,7 @@ body {
   padding: 20px;
 }
 
-.shape {
-  background: red;
-  width: 200px;
-  height: 200px;
-}
+
 
 .transforms {
   transform: rotateZ(45deg);
@@ -46,3 +43,93 @@ body {
   transform: translateX(50px);
   transform: translateY(50px);
 }
+
+
+.verb h1 {
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.verb h1 span:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  font-family: 'Pacifico', cursive;
+}
+
+
+.cone{
+      animation: spin 2s infinite cubic-bezier(.85,.01,.25,1);
+      margin: auto;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 100px solid tan;
+    }
+
+.layer1 {
+  animation: spin 2s infinite cubic-bezier(.85,.01,.25,1);
+  margin: auto;
+  top: 50%;
+  left:50%;
+  width: 100px;
+  height: 25px;
+  background: white;
+  border-radius: 25%
+
+}
+
+.layer2 {
+  animation: spin 2s infinite cubic-bezier(.85,.01,.25,1);
+  margin: auto;
+  width: 70px;
+  height: 25px;
+  background: white;
+  border-radius: 25%
+}
+
+
+.layer3 {
+  animation: spin 2s infinite cubic-bezier(.85,.01,.25,1);
+  margin: auto;
+  width: 30px;
+  height: 25px;
+  background: white;
+  border-radius: 25%
+
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotateX(-20deg) rotateY(20deg);
+  }
+  100% {
+    transform: rotateX(-20deg) rotateY(740deg);
+  }
+}
+
+@keyframes swerve {
+  0% {
+    transform: scaleY(.25);
+  }
+
+  50% {
+
+    transform: scaleY(.75);
+  }
+  
+  100% {
+    transform: scaleY(1);
+  }
+  }
+
+
+    
+
+
+

@@ -12,11 +12,11 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
-background: #F8D353;
-background: -webkit-linear-gradient(top left, #F8D353, #C61865);
-background: -moz-linear-gradient(top left, #F8D353, #C61865);
-background: linear-gradient(top left, #F8D353, #C61865);
-}
+  background: #F98F54;
+  background: -webkit-linear-gradient(top left, #F98F54, #5BC2FF);
+  background: -moz-linear-gradient(top left, #F98F54, #5BC2FF);
+  background: linear-gradient(top left, #F98F54, #5BC2FF);
+  }
 
 .center {
   position: absolute;
@@ -60,6 +60,8 @@ background: linear-gradient(top left, #F8D353, #C61865);
 a {
   color: white;
 }
+
+
 
 
 
