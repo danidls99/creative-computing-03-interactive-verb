@@ -31,3 +31,41 @@ function randomFloat (min, max) {
   return parseFloat(value.toFixed(2));
 }
 
+function hslColor(h, s, l) {  
+  var hue = h;
+  var saturation = s + "%";
+  var luminance = l + "%";
+
+  var color = "hsl(" + hue + "," + saturation + "," + luminance + ")";
+
+  return color;
+
+
+
+
+
+var shape = document.querySelector(".layer1");
+
+
+var height = randomNumber(150, 700);
+
+shape.style.height = height +"px";
+
+var h = randomNumber(0, 359);
+
+shape.style.background = hslColor(h, 50, 50);
+shape.style.background-color = hslColor(h+30, 90, 50);
+
+var shape = document.querySelector(".layer1");
+
+shape.style.background = hslColor(h, 50, 10);
+
+
+
+
+
+
+
+
+
+
