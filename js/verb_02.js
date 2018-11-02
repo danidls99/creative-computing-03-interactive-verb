@@ -6,30 +6,14 @@
 
   Source: https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
 */
-function randomNumber (min, max) {
+function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-/*
-  Returns a random floating point number between minimum value and maximum value
+randomNumber(0, 350);
 
-  For example, calling randomFloat(0, 1);
-  will return a random floating between 0.0 and 1.0.
 
-  Source: https://stackoverflow.com/questions/9724404/random-floating-point-double-in-inclusive-range
-*/
-function randomFloat (min, max) {
-  var float = Math.random();
-  var value;
 
-  if (float < 0.5) {
-    value = (1 - Math.random()) * (max-min) + min;
-  } else {
-    value = Math.random() * (max-min) + min;
-  }
-
-  return parseFloat(value.toFixed(2));
-}
 
 function hslColor(h, s, l) {  
   var hue = h;
@@ -40,26 +24,17 @@ function hslColor(h, s, l) {
 
   return color;
 
+var hue = randomNumber (0, 350);
+var color =hslColor (hue, 100, 80);
 
+var layer1 = document.querySelector(".layer1");
+layer1.style.background = hslColor(h, 100, 80);
 
+var layer2 = document.querySelector(".layer2");
+layer2.style.background = hslColor(h, 100, 80);
 
-
-var shape = document.querySelector(".layer1");
-
-
-var height = randomNumber(150, 700);
-
-shape.style.height = height +"px";
-
-var h = randomNumber(0, 359);
-
-shape.style.background = hslColor(h, 50, 50);
-shape.style.background-color = hslColor(h+30, 90, 50);
-
-var shape = document.querySelector(".layer1");
-
-shape.style.background = hslColor(h, 50, 10);
-
+var layer3 = document.querySelector(".layer3");
+layer3.style.background = hslColor(h, 100, 80);
 
 
 
