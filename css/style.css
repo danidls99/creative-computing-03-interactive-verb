@@ -13,9 +13,10 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   background: #F98F54;
-  background: -webkit-linear-gradient(top left, #F98F54, #5BC2FF);
-  background: -moz-linear-gradient(top left, #F98F54, #5BC2FF);
-  background: linear-gradient(top left, #F98F54, #5BC2FF);
+  background: #FFF541;
+background: -webkit-linear-gradient(top left, #FFF541, #FF5D5B);
+background: -moz-linear-gradient(top left, #FFF541, #FF5D5B);
+background: linear-gradient(top left, #FFF541, #FF5D5B);
   }
 
 .center {

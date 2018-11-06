@@ -13,8 +13,6 @@ function randomNumber(min, max) {
 randomNumber(0, 350);
 
 
-
-
 function hslColor(h, s, l) {  
   var hue = h;
   var saturation = s + "%";
@@ -23,20 +21,22 @@ function hslColor(h, s, l) {
   var color = "hsl(" + hue + "," + saturation + "," + luminance + ")";
 
   return color;
-
+}
 var hue = randomNumber (0, 350);
 var color =hslColor (hue, 100, 80);
 
 var layer1 = document.querySelector(".layer1");
-layer1.style.background = hslColor(h, 100, 80);
+layer1.style.background = hslColor(hue, 100, 80);
 
 var layer2 = document.querySelector(".layer2");
-layer2.style.background = hslColor(h, 100, 80);
+layer2.style.background = hslColor(hue, 100, 80);
 
 var layer3 = document.querySelector(".layer3");
-layer3.style.background = hslColor(h, 100, 80);
+layer3.style.background = hslColor(hue, 100, 80);
 
+var container = document.querySelector(".content");
 
+container.style.background = hslColor(hue+70, 100, 80);
 
 
 
