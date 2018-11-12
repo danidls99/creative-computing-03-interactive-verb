@@ -40,15 +40,16 @@ var layer1 = document.createElement('div');
 //add class "shape" to div
 layer1.classList.add('layer1');
 
-if (i % 23 == 0) {
-	layer1.classList.add('layer1');
-}
+// if (i % 23 == 0) {
+// 	layer1.classList.add('layer1');
+// }
 
 var duration = randomNumber (1000,5000);
 console.log(duration); 
 
 
 layer1.style.animationDuration = duration + 'ms';
+layer1.style.animationDelay = randomNumber(0,5000) + 'ms';
 
 
 // select container div
@@ -61,24 +62,21 @@ container.append(layer1);
 
 
 // select all shapes on the page
-var layer1 = document.querySelectorAll('.layer1');
+var layers = document.querySelectorAll('.layer1');
 
 // add interactions to each shape
-layer1.forEach(function(layer1,i) {
-  layer1.addEventListener('mouseover', function(event) {
+layers.forEach(function(layer1) {
+  layer1.addEventListener('mouseover', function() {
 
-    if (layer1.classList.contains('shape-interaction')) {
-
+    if (layer1.classList.contains('shape-interaction')) { 
+      layer1.classList.remove('shape-interaction');
     }else {
       layer1.classList.add('shape-interaction');
 
     }
-    
-    layer1.classList.add('shape-interaction');
+
   });
 });
-
-
 
 
 

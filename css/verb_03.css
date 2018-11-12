@@ -41,8 +41,8 @@ body {
       border-radius: 100%;
       position: relative;
       animation-name: spin;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
     }
     .layer1:before {
       content: "";
@@ -56,8 +56,8 @@ body {
       height: 12px;
       box-sizing: content-box;
       animation-name: spin;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
     }
     .layer1:after {
       content: "";
@@ -71,8 +71,8 @@ body {
       height: 12px;
       box-sizing: content-box;
       animation-name: spin;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+      animation-duration: 2s;
+      animation-iteration-count: isnfinite;
     }
 
 @keyframes spin {
@@ -85,13 +85,15 @@ body {
   100% {
     transform: rotate(360deg);
 }
+}
 
 
 .shape-interaction {
-  -webkit-transition: all 1s ease-in-out;
+  /*-webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;*/
+  transform: translateX(600px);
 }
 
 
